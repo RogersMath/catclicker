@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF--8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Cat Math Hopper</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="start-menu">
+        <h1>Black Cat Math Hopper</h1>
+        <button id="start-button">Start Game</button>
+    </div>
+
     <div class="game-container">
         <div class="main-game">
             <div id="yarn-ball">🧶</div>
@@ -30,6 +35,10 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- The script tag for sonantx.js -->
+    <script type="module" src="sonantx.js"></script>
+    <!-- Your main game script, now also a module -->
+    <script type="module" src="script.js"></script>
 </body>
 </html>
