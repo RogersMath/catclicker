@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Cat Math Hopper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="main-game">
+            <div id="yarn-ball">🧶</div>
+            <div id="cat">🐈‍⬛</div>
+            <div id="problem"></div>
+            <input type="number" id="answer" placeholder="Your Answer">
+            <button id="submit">Submit</button>
+            <div id="score-container">Yarn: <span id="yarn">0</span></div>
+        </div>
+        <div class="upgrades-container">
+            <h2>Upgrades</h2>
+            <div class="upgrade">
+                <p>Sharper Claws</p>
+                <p>+1 Yarn per correct answer.</p>
+                <button id="sharper-claws">Cost: 10 Yarn</button>
+            </div>
+            <div class="upgrade">
+                <p>Catnip Boost</p>
+                <p>Generates 1 Yarn per second.</p>
+                <button id="catnip-boost">Cost: 50 Yarn</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
