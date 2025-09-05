@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.game-container {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-game {
+    width: 300px;
+}
+
+#yarn-ball {
+    font-size: 3rem;
+    position: relative;
+    top: -40px;
+    left: 80px;
+    transform-origin: bottom;
+}
+
+#cat {
+    font-size: 5rem;
+    cursor: default;
+    position: relative;
+}
+
+#cat.hop {
+    animation: hop 0.5s;
+}
+
+@keyframes hop {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(30px, -60px) rotate(20deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+#problem {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+#answer {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 100px;
+    text-align: center;
+}
+
+#submit {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+#score-container {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.upgrades-container {
+    border-left: 2px solid #eee;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.upgrade {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.upgrade p {
+    margin: 0.5rem 0;
+}
+
+.upgrade button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+}
